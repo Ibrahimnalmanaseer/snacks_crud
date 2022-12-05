@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title%}
+    <title> Snack List</title>
+   
+{% endblock%}
+
+   
+{% block content %}
+
+
+<div>
+
+
+    <table>
+    <tr>
+      <th>Purchaser_id</th>
+      <th>Name</th>
+      <th>Check </th>
+
+    </tr>
+
+    {% for i in object_list%}
+    <tr>
+      <td>{{i.id}}</td>
+      <td>{{i.title}}</td>
+      <td> <button><a href="{%url 'snack_detail' pk=i.id  %}" >  More Details</a></button></td>
+      
+    </tr>
+    {%endfor%}
+   
+  </table>
+</div>
+
+<div class="create">
+
+  <button type="button" class="btn btn-secondary"><a href="{% url 'snack_create' %}" >Create New Snack</a></button> 
+
+</div>
+
+{%endblock%}

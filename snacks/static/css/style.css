@@ -1,0 +1,61 @@
+
+* {
+
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Raleway', sans-serif;
+    }
+    
+    
+nav{
+    background-color: #C7BCA1;
+    height: 100px;
+    align-items: center ;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+h2{
+    
+        margin-left: 20px;
+    }
+a{
+    text-decoration: none;
+        margin-right: 20px;
+    }
+
+table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        
+       
+      }
+      
+th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+      }
+      
+tr:hover {background-color: coral;}
+
+.form {
+width: 50%;
+margin: auto ;
+margin-top: 50px;
+
+}
+.form .text {
+   text-align: center;
+    
+    }
+
+.create{
+
+    text-align: center;
+    margin-top: 30px;
+}
+

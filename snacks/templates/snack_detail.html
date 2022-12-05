@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{% block title%}
+    <title>{{snack.title}}</title>
+{% endblock%}
+
+{% block content %}
+
+<div>
+
+
+    <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Purchaser</th>
+      <th>Update</th>
+    </tr>  
+    <tr>
+      <td>{{snack.id}}</td>
+      <td>{{snack.title}}</td>
+      <td>{{snack.description}}</td>
+      <td>{{snack.purchaser}}</td>
+      <td><button><a href="{%url 'snack_update' pk=snack.id  %}" > Update </a></button></td>
+      <td><button><a href="{%url 'snack_delete' pk=snack.id  %}" > Delete </a></button></td>
+    </tr>
+
+   
+  </table>
+</div>
+
+{% endblock %}

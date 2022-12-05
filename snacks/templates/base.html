@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    
+    {% block title%}
+
+    {% endblock%}
+    
+</head>
+<body>
+    <nav>
+        <section>
+            <h2>Django</h2>
+        </section>
+        <section>
+            
+            <a href="{%url 'snacks_list'%}">Snacks List</a>
+            <a href="{%url 'snack_create'%}">Create Snack</a>
+           
+           
+            
+        </section>
+        
+
+        
+    </nav>
+    {% block content %}
+
+    {%endblock%}
+</body>
+</html>
