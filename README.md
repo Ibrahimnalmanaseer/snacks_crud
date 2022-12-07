@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [Repository](https://ibrahimnalmanaseer.github.io/Django_Blog_App/)
+- [Repository](https://ibrahimnalmanaseer.github.io/snacks_crud/)
 
 
 ### Setup
